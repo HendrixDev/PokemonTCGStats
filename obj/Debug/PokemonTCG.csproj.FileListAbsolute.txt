@@ -1,0 +1,148 @@
+C:\Users\Zack\Documents\Projects\PokemonTCG\bin\Debug\PokemonTCG.exe.config
+C:\Users\Zack\Documents\Projects\PokemonTCG\bin\Debug\PokemonTCG.exe
+C:\Users\Zack\Documents\Projects\PokemonTCG\bin\Debug\PokemonTCG.pdb
+C:\Users\Zack\Documents\Projects\PokemonTCG\obj\Debug\PokemonTCG.csprojAssemblyReference.cache
+C:\Users\Zack\Documents\Projects\PokemonTCG\obj\Debug\MainWindow.g.cs
+C:\Users\Zack\Documents\Projects\PokemonTCG\obj\Debug\App.g.cs
+C:\Users\Zack\Documents\Projects\PokemonTCG\obj\Debug\PokemonTCG_MarkupCompile.cache
+C:\Users\Zack\Documents\Projects\PokemonTCG\obj\Debug\PokemonTCG_MarkupCompile.lref
+C:\Users\Zack\Documents\Projects\PokemonTCG\obj\Debug\MainWindow.baml
+C:\Users\Zack\Documents\Projects\PokemonTCG\obj\Debug\PokemonTCG.g.resources
+C:\Users\Zack\Documents\Projects\PokemonTCG\obj\Debug\PokemonTCG.Properties.Resources.resources
+C:\Users\Zack\Documents\Projects\PokemonTCG\obj\Debug\PokemonTCG.csproj.GenerateResource.cache
+C:\Users\Zack\Documents\Projects\PokemonTCG\obj\Debug\PokemonTCG.csproj.CoreCompileInputs.cache
+C:\Users\Zack\Documents\Projects\PokemonTCG\obj\Debug\PokemonTCG.exe
+C:\Users\Zack\Documents\Projects\PokemonTCG\obj\Debug\PokemonTCG.pdb
+G:\Visual Studio 2017\PokemonTCG\bin\Debug\PokemonTCG.exe.config
+G:\Visual Studio 2017\PokemonTCG\bin\Debug\PokemonTCG.exe
+G:\Visual Studio 2017\PokemonTCG\bin\Debug\PokemonTCG.pdb
+G:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.csprojAssemblyReference.cache
+G:\Visual Studio 2017\PokemonTCG\obj\Debug\MainWindow.g.cs
+G:\Visual Studio 2017\PokemonTCG\obj\Debug\App.g.cs
+G:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG_MarkupCompile.cache
+G:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG_MarkupCompile.lref
+G:\Visual Studio 2017\PokemonTCG\obj\Debug\MainWindow.baml
+G:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.g.resources
+G:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.Properties.Resources.resources
+G:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.csproj.GenerateResource.cache
+G:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.csproj.CoreCompileInputs.cache
+G:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.exe
+G:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.pdb
+G:\Visual Studio 2017\PokemonTCG\obj\Debug\NewPlayer.g.cs
+G:\Visual Studio 2017\PokemonTCG\obj\Debug\NewPlayer.baml
+F:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.csprojAssemblyReference.cache
+F:\Visual Studio 2017\PokemonTCG\obj\Debug\MainWindow.g.cs
+F:\Visual Studio 2017\PokemonTCG\obj\Debug\NewPlayer.g.cs
+F:\Visual Studio 2017\PokemonTCG\obj\Debug\App.g.cs
+F:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG_MarkupCompile.cache
+F:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG_MarkupCompile.lref
+F:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.exe
+F:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.pdb
+F:\Visual Studio 2017\PokemonTCG\obj\Debug\NewDeck.g.cs
+F:\Visual Studio 2017\PokemonTCG\bin\Debug\PokemonTCG.exe.config
+F:\Visual Studio 2017\PokemonTCG\bin\Debug\PokemonTCG.exe
+F:\Visual Studio 2017\PokemonTCG\bin\Debug\PokemonTCG.pdb
+F:\Visual Studio 2017\PokemonTCG\obj\Debug\MainWindow.baml
+F:\Visual Studio 2017\PokemonTCG\obj\Debug\NewPlayer.baml
+F:\Visual Studio 2017\PokemonTCG\obj\Debug\NewDeck.baml
+F:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.g.resources
+F:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.Properties.Resources.resources
+F:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.csproj.GenerateResource.cache
+F:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.csproj.CoreCompileInputs.cache
+F:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.csproj.CopyComplete
+D:\Visual Studio 2017\PokemonTCG\bin\Debug\PokemonTCG.exe.config
+D:\Visual Studio 2017\PokemonTCG\bin\Debug\PokemonTCG.exe
+D:\Visual Studio 2017\PokemonTCG\bin\Debug\PokemonTCG.pdb
+D:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.csprojAssemblyReference.cache
+D:\Visual Studio 2017\PokemonTCG\obj\Debug\MainWindow.g.cs
+D:\Visual Studio 2017\PokemonTCG\obj\Debug\NewDeck.g.cs
+D:\Visual Studio 2017\PokemonTCG\obj\Debug\NewPlayer.g.cs
+D:\Visual Studio 2017\PokemonTCG\obj\Debug\App.g.cs
+D:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG_MarkupCompile.cache
+D:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG_MarkupCompile.lref
+D:\Visual Studio 2017\PokemonTCG\obj\Debug\MainWindow.baml
+D:\Visual Studio 2017\PokemonTCG\obj\Debug\NewDeck.baml
+D:\Visual Studio 2017\PokemonTCG\obj\Debug\NewPlayer.baml
+D:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.g.resources
+D:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.Properties.Resources.resources
+D:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.csproj.GenerateResource.cache
+D:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.csproj.CoreCompileInputs.cache
+D:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.csproj.CopyComplete
+D:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.exe
+D:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG.pdb
+D:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG_Content.g.cs
+D:\Visual Studio 2017\PokemonTCG\bin\Debug\EntityFramework.dll
+D:\Visual Studio 2017\PokemonTCG\bin\Debug\EntityFramework.SqlServer.dll
+D:\Visual Studio 2017\PokemonTCG\bin\Debug\EntityFramework.xml
+D:\Visual Studio 2017\PokemonTCG\bin\Debug\EntityFramework.SqlServer.xml
+F:\Visual Studio 2017\PokemonTCG\bin\Debug\EntityFramework.dll
+F:\Visual Studio 2017\PokemonTCG\bin\Debug\EntityFramework.SqlServer.dll
+F:\Visual Studio 2017\PokemonTCG\bin\Debug\EntityFramework.xml
+F:\Visual Studio 2017\PokemonTCG\bin\Debug\EntityFramework.SqlServer.xml
+F:\Visual Studio 2017\PokemonTCG\obj\Debug\PokemonTCG_Content.g.cs
+F:\Visual Studio\PokemonTCG\bin\Debug\PokemonTCG.exe.config
+F:\Visual Studio\PokemonTCG\bin\Debug\PokemonTCG.exe
+F:\Visual Studio\PokemonTCG\bin\Debug\PokemonTCG.pdb
+F:\Visual Studio\PokemonTCG\bin\Debug\EntityFramework.dll
+F:\Visual Studio\PokemonTCG\bin\Debug\EntityFramework.SqlServer.dll
+F:\Visual Studio\PokemonTCG\bin\Debug\EntityFramework.xml
+F:\Visual Studio\PokemonTCG\bin\Debug\EntityFramework.SqlServer.xml
+F:\Visual Studio\PokemonTCG\obj\Debug\PokemonTCG.csprojAssemblyReference.cache
+F:\Visual Studio\PokemonTCG\obj\Debug\MainWindow.g.cs
+F:\Visual Studio\PokemonTCG\obj\Debug\NewDeck.g.cs
+F:\Visual Studio\PokemonTCG\obj\Debug\NewPlayer.g.cs
+F:\Visual Studio\PokemonTCG\obj\Debug\App.g.cs
+F:\Visual Studio\PokemonTCG\obj\Debug\PokemonTCG_MarkupCompile.cache
+F:\Visual Studio\PokemonTCG\obj\Debug\PokemonTCG_MarkupCompile.lref
+F:\Visual Studio\PokemonTCG\obj\Debug\MainWindow.baml
+F:\Visual Studio\PokemonTCG\obj\Debug\NewDeck.baml
+F:\Visual Studio\PokemonTCG\obj\Debug\NewPlayer.baml
+F:\Visual Studio\PokemonTCG\obj\Debug\PokemonTCG.g.resources
+F:\Visual Studio\PokemonTCG\obj\Debug\PokemonTCG.Properties.Resources.resources
+F:\Visual Studio\PokemonTCG\obj\Debug\PokemonTCG.csproj.GenerateResource.cache
+F:\Visual Studio\PokemonTCG\obj\Debug\PokemonTCG.csproj.CoreCompileInputs.cache
+F:\Visual Studio\PokemonTCG\obj\Debug\PokemonTCG.csproj.CopyComplete
+F:\Visual Studio\PokemonTCG\obj\Debug\PokemonTCG.exe
+F:\Visual Studio\PokemonTCG\obj\Debug\PokemonTCG.pdb
+F:\Visual Studio\PokemonTCG\obj\Debug\MatchHistory.g.cs
+F:\Visual Studio\PokemonTCG\obj\Debug\MatchHistory.baml
+F:\Visual Studio\PokemonTCG\obj\Debug\Stats.g.cs
+F:\Visual Studio\PokemonTCG\obj\Debug\Stats.baml
+F:\Visual Studio\PokemonTCG\bin\Debug\PokemonTCG.Data.dll
+F:\Visual Studio\PokemonTCG\bin\Debug\PokemonTCG.Data.pdb
+F:\Visual Studio\PokemonTCG\bin\Debug\PokemonTCG.Data.dll.config
+F:\Visual Studio\PokemonTCG\obj\Debug\BlackCrystal.baml
+F:\Visual Studio\PokemonTCG\obj\Debug\App.baml
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\bin\Debug\PokemonTCG.exe.config
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\bin\Debug\PokemonTCG.exe
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\bin\Debug\PokemonTCG.pdb
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\bin\Debug\EntityFramework.dll
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\bin\Debug\PokemonTCG.Data.dll
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\bin\Debug\PokemonTCG.Data.pdb
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\bin\Debug\PokemonTCG.Data.dll.config
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\bin\Debug\EntityFramework.xml
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\PokemonTCG.csprojAssemblyReference.cache
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\BlackCrystal.baml
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\MainWindow.g.cs
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\MatchHistory.g.cs
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\NewDeck.g.cs
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\NewPlayer.g.cs
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\Stats.g.cs
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\App.g.cs
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\PokemonTCG_MarkupCompile.cache
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\PokemonTCG_MarkupCompile.lref
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\App.baml
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\MainWindow.baml
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\MatchHistory.baml
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\NewDeck.baml
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\NewPlayer.baml
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\Stats.baml
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\PokemonTCG.g.resources
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\PokemonTCG.Properties.Resources.resources
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\PokemonTCG.csproj.GenerateResource.cache
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\PokemonTCG.csproj.CoreCompileInputs.cache
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\PokemonTCG.csproj.CopyComplete
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\PokemonTCG.exe
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\obj\Debug\PokemonTCG.pdb

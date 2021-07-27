@@ -1,0 +1,115 @@
+﻿<Window x:Class="PokemonTCG.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PokemonTCG"
+        mc:Ignorable="d"
+        Title="TCG Stats - HendrixDev" Height="450" Width="800" Background="{StaticResource DarkBackground}">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="84" Margin="619,325,0,0" VerticalAlignment="Top" Width="163" Source="Images/Pokémon_Trading_Card_Game_logo.svg.png"/>
+
+        <ComboBox Margin="160,70,452,317" Name="PlayerOneSelect" DropDownClosed="PlayerOneSelect_DropDownClosed">
+            <!--<ComboBoxItem IsSelected="True">Select Player...</ComboBoxItem>-->
+        </ComboBox>
+
+        <ComboBox Margin="452,70,160,317" Name="PlayerTwoSelect" DropDownClosed="PlayerTwoSelect_DropDownClosed">
+            <!--<ComboBoxItem IsSelected="True">Select Player...</ComboBoxItem>-->
+        </ComboBox>
+        <Label Foreground="WhiteSmoke" Content="VS" HorizontalAlignment="Left" Margin="372,51,0,0" VerticalAlignment="Top" Width="48" Height="54" FontSize="30"/>
+        <Label Foreground="WhiteSmoke" Content="Player" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top" Width="105" Height="54" FontSize="30"/>
+        <Label Foreground="WhiteSmoke" Content="Deck" HorizontalAlignment="Left" Margin="10,136,0,0" VerticalAlignment="Top" Width="80" Height="54" FontSize="30"/>
+        <Label Foreground="WhiteSmoke" Content="Damage" HorizontalAlignment="Left" Margin="10,217,0,0" VerticalAlignment="Top" Width="128" Height="54" FontSize="30"/>
+        <Label Foreground="WhiteSmoke" Content="Winner" HorizontalAlignment="Left" Margin="10,293,0,0" VerticalAlignment="Top" Width="114" Height="54" FontSize="30"/>
+
+
+        <ComboBox Margin="160,146,452,239" Name="PlayerOneDeckSelect" ItemsSource="{Binding Types}" DropDownClosed="PlayerOneDeckSelect_DropDownClosed">
+
+
+            <!--<ComboBoxItem IsSelected="True">Select Deck...</ComboBoxItem>-->
+            <!--<ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/water.png" Height="20" Width="20"/>
+                    <Image Source="Images/steel.png" Height="20" Width="20"/>
+                    <TextBlock>Water/Steel</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/Dark.png" Height="20" Width="20"/>
+                    <TextBlock>Dark</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/dragon.png" Height="20" Width="20"/>
+                    <Image Source="Images/electric.png" Height="20" Width="20"/>
+                    <TextBlock>Ray/Eels</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/fairy.png" Height="20" Width="20"/>
+                    <TextBlock>Fairy</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>-->
+        </ComboBox>
+
+        <ComboBox Margin="452,146,160,239" Name="PlayerTwoDeckSelect" DropDownClosed="PlayerTwoDeckSelect_DropDownClosed">
+            <!--<ComboBoxItem IsSelected="True">Select Deck...</ComboBoxItem>-->
+            <!--<ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/water.png" Height="20" Width="20"/>
+                    <Image Source="Images/steel.png" Height="20" Width="20"/>
+                    <TextBlock>Water/Steel</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/Dark.png" Height="20" Width="20"/>
+                    <TextBlock>Dark</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/dragon.png" Height="20" Width="20"/>
+                    <Image Source="Images/electric.png" Height="20" Width="20"/>
+                    <TextBlock>Ray/Eels</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/fairy.png" Height="20" Width="20"/>
+                    <TextBlock>Fairy</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>-->
+        </ComboBox>
+        <TextBox HorizontalAlignment="Left" Name="PlayerOneDamage" Height="25" Margin="205,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" TextAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox HorizontalAlignment="Left" Name="PlayerTwoDamage" Height="25" Margin="499,231,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="90" TextAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <ComboBox Margin="306,298,306,89" Name="MatchWinner">
+            <ComboBoxItem IsSelected="True">Match Winner...</ComboBoxItem>
+            <ComboBoxItem>Zack</ComboBoxItem>
+            <ComboBoxItem>Daniel</ComboBoxItem>
+            <ComboBoxItem>Carlos</ComboBoxItem>
+            <ComboBoxItem>Isaiah</ComboBoxItem>
+        </ComboBox>
+        <Button Content="Save" Name="SaveBtn" HorizontalAlignment="Left" Margin="358,351,0,0" VerticalAlignment="Top" Width="75" Click="SaveBtn_Click" />
+        <Button Content="Reset" Name="ResetBtn" HorizontalAlignment="Left" Margin="358,376,0,0" VerticalAlignment="Top" Width="75" Click="ResetBtn_Click"/>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top" Margin="0,0,697,389" Height="30" Background="{StaticResource DarkBackground}">
+                <MenuItem Header="_New" Foreground="WhiteSmoke" >
+                    <MenuItem Header="_Player" Name="NewPlayerBtn" Click="NewPlayerBtn_Click" Background="{StaticResource DarkBackground}"/>
+                    <MenuItem Header="_Deck" Name="NewDeckBtn" Click="NewDeckBtn_Click" Background="{StaticResource DarkBackground}"/>
+                    <MenuItem Header="_Match" Background="{StaticResource DarkBackground}"/>
+                    <Separator />
+                    <MenuItem Header="_Exit" Background="{StaticResource DarkBackground}"/>
+                </MenuItem>
+                <MenuItem Header="_View" Foreground="WhiteSmoke">
+                    <MenuItem Header="_Stats" Name="Stats" Click="Stats_Click" Background="{StaticResource DarkBackground}"/>
+                    <MenuItem Header="_Match History" Name="MatchHistoryBtn" Click="MatchHistoryBtn_Click" Background="{StaticResource DarkBackground}"/>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+    </Grid>
+</Window>

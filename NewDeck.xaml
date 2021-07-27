@@ -1,0 +1,65 @@
+﻿<Window x:Class="PokemonTCG.NewDeck"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PokemonTCG"
+        mc:Ignorable="d"
+        Title="Create New Deck" Height="470" Width="450" Background="{StaticResource DarkBackground}" WindowStartupLocation="CenterOwner">
+    <Grid Name="Deck">
+        <Label Foreground="WhiteSmoke" Content="PLAYER" HorizontalAlignment="Left" Margin="177,10,0,0" VerticalAlignment="Top" Height="41" Width="92" FontSize="25"/>
+        <Label Foreground="WhiteSmoke" Content="TYPE(S)" HorizontalAlignment="Left" Margin="194,164,0,0" VerticalAlignment="Top" Height="41" Width="64" FontSize="25"/>
+        <Label Foreground="WhiteSmoke" Content="NAME" HorizontalAlignment="Left" Margin="184,81,0,0" VerticalAlignment="Top" Height="41" Width="84" FontSize="25"/>
+        <Button Content="Save" Name="SaveBtn" Click="SaveBtn_Click" HorizontalAlignment="Left" Margin="186,390,0,0" VerticalAlignment="Top" Width="75"/>
+
+        <CheckBox Margin="158,273,232.2,141.8" Name="Colorless">
+            <Image Source="Images/colorless.png" Height="20" Width="20"></Image>
+        </CheckBox>
+
+        <CheckBox Margin="158,246,232.2,167.8" Name="Water">
+            <Image Source="Images/water.png" Height="20" Width="20"></Image>
+        </CheckBox>
+
+
+        <CheckBox Margin="158,219,232.2,194.8" Name="Electric">
+            <Image Source="Images/electric.png" Height="20" Width="20"></Image>
+        </CheckBox>
+
+        <CheckBox Margin="259,219,131.2,194.8" Name="Grass">
+            <Image Source="Images/grass.png" Height="20" Width="20"></Image>
+        </CheckBox>
+
+        <CheckBox Margin="259,246,131.2,167.8" Name="Fire">
+            <Image Source="Images/fire.png" Height="20" Width="20"></Image>
+        </CheckBox>
+
+        <CheckBox Margin="259,273,131.2,140.8" Name="Fight">
+            <Image Source="Images/fight.png" Height="20" Width="20"></Image>
+        </CheckBox>
+
+        <CheckBox Margin="259,300,131.2,114.8" Name="Dark">
+            <Image Source="Images/dark.png" Height="20" Width="20"></Image>
+        </CheckBox>
+
+        <CheckBox Margin="158,299,232.2,114.8" Name="Fairy">
+            <Image Source="Images/Fairy.png" Height="20" Width="20"></Image>
+        </CheckBox>
+
+        <CheckBox Margin="158,326,232.2,86.8" Name="Dragon">
+            <Image Source="Images/dragon.png" Height="20" Width="20"></Image>
+        </CheckBox>
+
+        <CheckBox Margin="259,327,131.2,86.8" Name="Psychic">
+            <Image Source="Images/psychic.png" Height="20" Width="20"></Image>
+        </CheckBox>
+
+        <CheckBox Margin="259,354,131.2,55.8" Name="Steel">
+            <Image Source="Images/steel.png" Height="20" Width="20"></Image>
+        </CheckBox>
+        
+        <TextBox HorizontalAlignment="Left" Name="DeckNameTxt" Height="23" Margin="165,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <ComboBox Name="PlayerSelect" HorizontalAlignment="Left" Margin="165,51,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

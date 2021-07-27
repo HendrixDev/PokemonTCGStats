@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PokemonModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Decks">
+          <Key>
+            <PropertyRef Name="DeckID" />
+          </Key>
+          <Property Name="DeckID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="TotalGamesPlayes" Type="int" Nullable="false" />
+          <Property Name="Wins" Type="int" Nullable="false" />
+          <Property Name="HighestDamage" Type="int" Nullable="false" />
+          <Property Name="LowestDamage" Type="int" Nullable="false" />
+          <Property Name="PlayerId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Matches">
+          <Key>
+            <PropertyRef Name="MatchID" />
+          </Key>
+          <Property Name="MatchID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PlayerOne" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PlayerTwo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PlayerTwoDamage" Type="int" Nullable="false" />
+          <Property Name="PlayerOneDamage" Type="int" Nullable="false" />
+          <Property Name="PlayerOneDeck" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PlayerTwoDeck" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Winner" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Date" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Players">
+          <Key>
+            <PropertyRef Name="PlayerID" />
+          </Key>
+          <Property Name="PlayerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="TotalGamesPlayed" Type="int" Nullable="false" />
+          <Property Name="Wins" Type="int" Nullable="false" />
+          <Property Name="HighestDamage" Type="int" Nullable="false" />
+          <Property Name="LowestDamage" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Types">
+          <Key>
+            <PropertyRef Name="TypeId" />
+          </Key>
+          <Property Name="TypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TypeName" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="DeckID" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Decks_Players">
+          <End Role="Players" Type="Self.Players" Multiplicity="1" />
+          <End Role="Decks" Type="Self.Decks" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Players">
+              <PropertyRef Name="PlayerID" />
+            </Principal>
+            <Dependent Role="Decks">
+              <PropertyRef Name="PlayerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Types_Decks">
+          <End Role="Decks" Type="Self.Decks" Multiplicity="1" />
+          <End Role="Types" Type="Self.Types" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Decks">
+              <PropertyRef Name="DeckID" />
+            </Principal>
+            <Dependent Role="Types">
+              <PropertyRef Name="DeckID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PokemonModelStoreContainer">
+          <EntitySet Name="Decks" EntityType="Self.Decks" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Matches" EntityType="Self.Matches" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Players" EntityType="Self.Players" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Types" EntityType="Self.Types" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Decks_Players" Association="Self.FK_Decks_Players">
+            <End Role="Players" EntitySet="Players" />
+            <End Role="Decks" EntitySet="Decks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Types_Decks" Association="Self.FK_Types_Decks">
+            <End Role="Decks" EntitySet="Decks" />
+            <End Role="Types" EntitySet="Types" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PokemonModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Deck">
+          <Key>
+            <PropertyRef Name="DeckID" />
+          </Key>
+          <Property Name="DeckID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TotalGamesPlayes" Type="Int32" Nullable="false" />
+          <Property Name="Wins" Type="Int32" Nullable="false" />
+          <Property Name="HighestDamage" Type="Int32" Nullable="false" />
+          <Property Name="LowestDamage" Type="Int32" Nullable="false" />
+          <Property Name="PlayerId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Player" Relationship="Self.FK_Decks_Players" FromRole="Decks" ToRole="Players" />
+          <NavigationProperty Name="Types" Relationship="Self.FK_Types_Decks" FromRole="Decks" ToRole="Types" />
+        </EntityType>
+        <EntityType Name="Match">
+          <Key>
+            <PropertyRef Name="MatchID" />
+          </Key>
+          <Property Name="MatchID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PlayerOne" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PlayerTwo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PlayerTwoDamage" Type="Int32" Nullable="false" />
+          <Property Name="PlayerOneDamage" Type="Int32" Nullable="false" />
+          <Property Name="PlayerOneDeck" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PlayerTwoDeck" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Winner" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+        </EntityType>
+        <EntityType Name="Player">
+          <Key>
+            <PropertyRef Name="PlayerID" />
+          </Key>
+          <Property Name="PlayerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TotalGamesPlayed" Type="Int32" Nullable="false" />
+          <Property Name="Wins" Type="Int32" Nullable="false" />
+          <Property Name="HighestDamage" Type="Int32" Nullable="false" />
+          <Property Name="LowestDamage" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Decks" Relationship="Self.FK_Decks_Players" FromRole="Players" ToRole="Decks" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Type">
+          <Key>
+            <PropertyRef Name="TypeId" />
+          </Key>
+          <Property Name="TypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TypeName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DeckID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Deck" Relationship="Self.FK_Types_Decks" FromRole="Types" ToRole="Decks" />
+        </EntityType>
+        <Association Name="FK_Decks_Players">
+          <End Role="Players" Type="Self.Player" Multiplicity="1" />
+          <End Role="Decks" Type="Self.Deck" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Players">
+              <PropertyRef Name="PlayerID" />
+            </Principal>
+            <Dependent Role="Decks">
+              <PropertyRef Name="PlayerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Types_Decks">
+          <End Role="Decks" Type="Self.Deck" Multiplicity="1" />
+          <End Role="Types" Type="Self.Type" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Decks">
+              <PropertyRef Name="DeckID" />
+            </Principal>
+            <Dependent Role="Types">
+              <PropertyRef Name="DeckID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PokemonEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Decks" EntityType="Self.Deck" />
+          <EntitySet Name="Matches" EntityType="Self.Match" />
+          <EntitySet Name="Players" EntityType="Self.Player" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="Types" EntityType="Self.Type" />
+          <AssociationSet Name="FK_Decks_Players" Association="Self.FK_Decks_Players">
+            <End Role="Players" EntitySet="Players" />
+            <End Role="Decks" EntitySet="Decks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Types_Decks" Association="Self.FK_Types_Decks">
+            <End Role="Decks" EntitySet="Decks" />
+            <End Role="Types" EntitySet="Types" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PokemonModelStoreContainer" CdmEntityContainer="PokemonEntities1">
+          <EntitySetMapping Name="Decks">
+            <EntityTypeMapping TypeName="PokemonModel.Deck">
+              <MappingFragment StoreEntitySet="Decks">
+                <ScalarProperty Name="DeckID" ColumnName="DeckID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="TotalGamesPlayes" ColumnName="TotalGamesPlayes" />
+                <ScalarProperty Name="Wins" ColumnName="Wins" />
+                <ScalarProperty Name="HighestDamage" ColumnName="HighestDamage" />
+                <ScalarProperty Name="LowestDamage" ColumnName="LowestDamage" />
+                <ScalarProperty Name="PlayerId" ColumnName="PlayerId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Matches">
+            <EntityTypeMapping TypeName="PokemonModel.Match">
+              <MappingFragment StoreEntitySet="Matches">
+                <ScalarProperty Name="MatchID" ColumnName="MatchID" />
+                <ScalarProperty Name="PlayerOne" ColumnName="PlayerOne" />
+                <ScalarProperty Name="PlayerTwo" ColumnName="PlayerTwo" />
+                <ScalarProperty Name="PlayerTwoDamage" ColumnName="PlayerTwoDamage" />
+                <ScalarProperty Name="PlayerOneDamage" ColumnName="PlayerOneDamage" />
+                <ScalarProperty Name="PlayerOneDeck" ColumnName="PlayerOneDeck" />
+                <ScalarProperty Name="PlayerTwoDeck" ColumnName="PlayerTwoDeck" />
+                <ScalarProperty Name="Winner" ColumnName="Winner" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Players">
+            <EntityTypeMapping TypeName="PokemonModel.Player">
+              <MappingFragment StoreEntitySet="Players">
+                <ScalarProperty Name="PlayerID" ColumnName="PlayerID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="TotalGamesPlayed" ColumnName="TotalGamesPlayed" />
+                <ScalarProperty Name="Wins" ColumnName="Wins" />
+                <ScalarProperty Name="HighestDamage" ColumnName="HighestDamage" />
+                <ScalarProperty Name="LowestDamage" ColumnName="LowestDamage" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="PokemonModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Types">
+            <EntityTypeMapping TypeName="PokemonModel.Type">
+              <MappingFragment StoreEntitySet="Types">
+                <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+                <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+                <ScalarProperty Name="DeckID" ColumnName="DeckID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

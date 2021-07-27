@@ -1,0 +1,24 @@
+F:\Visual Studio\PokemonTCG\PokemonTCG.Data\obj\Debug\PokemonTCG.Data.csprojAssemblyReference.cache
+F:\Visual Studio\PokemonTCG\PokemonTCG.Data\obj\Debug\PokemonTCG.Data.csproj.CoreCompileInputs.cache
+F:\Visual Studio\PokemonTCG\PokemonTCG.Data\bin\Debug\PokemonTCG.Data.dll.config
+F:\Visual Studio\PokemonTCG\PokemonTCG.Data\bin\Debug\PokemonTCG.Data.dll
+F:\Visual Studio\PokemonTCG\PokemonTCG.Data\bin\Debug\PokemonTCG.Data.pdb
+F:\Visual Studio\PokemonTCG\PokemonTCG.Data\bin\Debug\EntityFramework.dll
+F:\Visual Studio\PokemonTCG\PokemonTCG.Data\bin\Debug\EntityFramework.SqlServer.dll
+F:\Visual Studio\PokemonTCG\PokemonTCG.Data\bin\Debug\EntityFramework.xml
+F:\Visual Studio\PokemonTCG\PokemonTCG.Data\bin\Debug\EntityFramework.SqlServer.xml
+F:\Visual Studio\PokemonTCG\PokemonTCG.Data\obj\Debug\PokemonTCG.Data.csproj.CopyComplete
+F:\Visual Studio\PokemonTCG\PokemonTCG.Data\obj\Debug\PokemonTCG.Data.dll
+F:\Visual Studio\PokemonTCG\PokemonTCG.Data\obj\Debug\PokemonTCG.Data.pdb
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\PokemonTCG.Data\bin\Debug\PokemonTCG.Data.dll.config
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\PokemonTCG.Data\bin\Debug\PokemonTCG.Data.dll
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\PokemonTCG.Data\bin\Debug\PokemonTCG.Data.pdb
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\PokemonTCG.Data\bin\Debug\EntityFramework.dll
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\PokemonTCG.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\PokemonTCG.Data\bin\Debug\EntityFramework.xml
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\PokemonTCG.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\PokemonTCG.Data\obj\Debug\PokemonTCG.Data.csprojAssemblyReference.cache
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\PokemonTCG.Data\obj\Debug\PokemonTCG.Data.csproj.CoreCompileInputs.cache
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\PokemonTCG.Data\obj\Debug\PokemonTCG.Data.csproj.CopyComplete
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\PokemonTCG.Data\obj\Debug\PokemonTCG.Data.dll
+C:\Users\m374l\Documents\GitHub\PokemonTCGStats\PokemonTCG.Data\obj\Debug\PokemonTCG.Data.pdb

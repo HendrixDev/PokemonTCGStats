@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PokemonModelStoreContainer" CdmEntityContainer="PokemonEntities">
+    <EntitySetMapping Name="Decks">
+      <EntityTypeMapping TypeName="PokemonModel.Deck">
+        <MappingFragment StoreEntitySet="Decks">
+          <ScalarProperty Name="DeckID" ColumnName="DeckID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TotalGamesPlayes" ColumnName="TotalGamesPlayes" />
+          <ScalarProperty Name="Wins" ColumnName="Wins" />
+          <ScalarProperty Name="HighestDamage" ColumnName="HighestDamage" />
+          <ScalarProperty Name="LowestDamage" ColumnName="LowestDamage" />
+          <ScalarProperty Name="PlayerId" ColumnName="PlayerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Matches">
+      <EntityTypeMapping TypeName="PokemonModel.Match">
+        <MappingFragment StoreEntitySet="Matches">
+          <ScalarProperty Name="MatchID" ColumnName="MatchID" />
+          <ScalarProperty Name="PlayerOne" ColumnName="PlayerOne" />
+          <ScalarProperty Name="PlayerTwo" ColumnName="PlayerTwo" />
+          <ScalarProperty Name="PlayerOneDamage" ColumnName="PlayerOneDamage" />
+          <ScalarProperty Name="PlayerTwoDamage" ColumnName="PlayerTwoDamage" />
+          <ScalarProperty Name="PlayerOneDeck" ColumnName="PlayerOneDeck" />
+          <ScalarProperty Name="PlayerTwoDeck" ColumnName="PlayerTwoDeck" />
+          <ScalarProperty Name="Winner" ColumnName="Winner" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Players">
+      <EntityTypeMapping TypeName="PokemonModel.Player">
+        <MappingFragment StoreEntitySet="Players">
+          <ScalarProperty Name="PlayerID" ColumnName="PlayerID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TotalGamesPlayed" ColumnName="TotalGamesPlayed" />
+          <ScalarProperty Name="Wins" ColumnName="Wins" />
+          <ScalarProperty Name="HighestDamage" ColumnName="HighestDamage" />
+          <ScalarProperty Name="LowestDamage" ColumnName="LowestDamage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Types">
+      <EntityTypeMapping TypeName="PokemonModel.Type">
+        <MappingFragment StoreEntitySet="Types">
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="DeckID" ColumnName="DeckID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="PokemonModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

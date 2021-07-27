@@ -1,0 +1,43 @@
+﻿<Window x:Class="PokemonTCG.Stats"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PokemonTCG"
+        mc:Ignorable="d"
+        Title="Stats" Height="400" Width="500" Background="{StaticResource DarkBackground}" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <ComboBox HorizontalAlignment="Left" Height="25" Margin="54,36,0,0" VerticalAlignment="Top" Width="164" Name="StatsListPlayers" SelectionChanged="StatsListPlayers_SelectionChanged"/>
+        <ComboBox HorizontalAlignment="Left" Height="25" Margin="286,36,0,0" VerticalAlignment="Top" Width="164" Name="StatsListDecks" SelectionChanged="StatsListDecks_SelectionChanged"/>
+        <Label Content="Player" HorizontalAlignment="Left" Margin="110,10,0,0" VerticalAlignment="Top" Foreground="WhiteSmoke"/>
+        <Label Content="Deck" HorizontalAlignment="Left" Margin="349,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.57,-1.178" Foreground="WhiteSmoke"/>
+        <Label Content="Player stats" Name="PlayerOverallStats" HorizontalAlignment="Left" Margin="63,133,0,0" VerticalAlignment="Top" Foreground="WhiteSmoke"/>
+        <Label Content="Deck stats" Name="DeckStats" HorizontalAlignment="Left" Margin="302,134,0,0" VerticalAlignment="Top" Foreground="WhiteSmoke"/>
+        <Label Content="Wins:" HorizontalAlignment="Left" Margin="71,158,0,0" VerticalAlignment="Top" Foreground="WhiteSmoke"/>
+        <Label Content="Losses:" HorizontalAlignment="Left" Margin="63,183,0,0" VerticalAlignment="Top" Foreground="WhiteSmoke"/>
+        <Label Foreground="WhiteSmoke" Content="Total Games:" HorizontalAlignment="Left" Margin="33,205,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="WhiteSmoke" Content="Highest Damage:" HorizontalAlignment="Left" Margin="9,260,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="WhiteSmoke" Content="Lowest Damage:" HorizontalAlignment="Left" Margin="12,233,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="WhiteSmoke" Content="Win Rate %:" HorizontalAlignment="Left" Margin="37,289,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="WhiteSmoke" Content="Wins:" HorizontalAlignment="Left" Margin="310,158,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="WhiteSmoke" Content="Losses:" HorizontalAlignment="Left" Margin="302,183,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="WhiteSmoke" Content="Total Games:" HorizontalAlignment="Left" Margin="272,205,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="WhiteSmoke" Content="Highest Damage:" HorizontalAlignment="Left" Margin="248,260,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="WhiteSmoke" Content="Lowest Damage:" HorizontalAlignment="Left" Margin="251,233,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="WhiteSmoke" Content="Win Rate %:" HorizontalAlignment="Left" Margin="275,286,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="WhiteSmoke" Name="PlayerWins"         HorizontalAlignment="Left" Margin="110,158,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="WhiteSmoke" Name="PlayerLosses"       HorizontalAlignment="Left" Margin="110,183,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="WhiteSmoke" Name="PlayerTotalGames"     HorizontalAlignment="Left" Margin="110,205,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="WhiteSmoke" Name="PlayerHighestDamage"   HorizontalAlignment="Left" Margin="110,260,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="WhiteSmoke" Name="PlayerLowestDamage" HorizontalAlignment="Left" Margin="110,233,0,0" VerticalAlignment="Top"/>
+        <!--<Label Foreground="WhiteSmoke" Name="PlayerWinRatio" HorizontalAlignment="Left" Margin="110,289,0,0" VerticalAlignment="Top"/>-->
+        <ProgressBar HorizontalAlignment="Left" Margin="111,290,0,0" Name="PlayerWinRatio" Width="125" Height="25" VerticalAlignment="Top" IsIndeterminate="False" Orientation="Horizontal" IsTabStop="False" />
+        <ProgressBar HorizontalAlignment="Left" Margin="351,287,0,0" Name="DeckWinRatio" Width="125" Height="25" VerticalAlignment="Top" IsIndeterminate="False" Orientation="Horizontal" IsTabStop="False" />
+        <Label Foreground="WhiteSmoke" Name="DeckWins"          HorizontalAlignment="Left" Margin="349,158,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="WhiteSmoke" Name="DeckLosses"        HorizontalAlignment="Left" Margin="349,183,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="WhiteSmoke" Name="DeckTotalGames"      HorizontalAlignment="Left" Margin="349,205,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="WhiteSmoke" Name="DeckHighestDamage"    HorizontalAlignment="Left" Margin="349,260,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="WhiteSmoke" Name="DeckLowestDamage"  HorizontalAlignment="Left" Margin="349,233,0,0" VerticalAlignment="Top"/>
+        <!--<Label Foreground="WhiteSmoke" Name="DeckWinRatio" HorizontalAlignment="Left" Margin="348,286,0,0" VerticalAlignment="Top"/>-->
+    </Grid>
+</Window>
