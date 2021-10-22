@@ -13,48 +13,48 @@
         <Button Content="Save" Name="SaveBtn" Click="SaveBtn_Click" HorizontalAlignment="Left" Margin="186,390,0,0" VerticalAlignment="Top" Width="75"/>
 
         <CheckBox Margin="158,273,232.2,141.8" Name="Colorless">
-            <Image Source="Images/colorless.png" Height="20" Width="20"></Image>
+            <Image Source="../Images/colorless.png" Height="20" Width="20"></Image>
         </CheckBox>
 
         <CheckBox Margin="158,246,232.2,167.8" Name="Water">
-            <Image Source="Images/water.png" Height="20" Width="20"></Image>
+            <Image Source="../Images/water.png" Height="20" Width="20"></Image>
         </CheckBox>
 
 
         <CheckBox Margin="158,219,232.2,194.8" Name="Electric">
-            <Image Source="Images/electric.png" Height="20" Width="20"></Image>
+            <Image Source="../Images/electric.png" Height="20" Width="20"></Image>
         </CheckBox>
 
         <CheckBox Margin="259,219,131.2,194.8" Name="Grass">
-            <Image Source="Images/grass.png" Height="20" Width="20"></Image>
+            <Image Source="../Images/grass.png" Height="20" Width="20"></Image>
         </CheckBox>
 
         <CheckBox Margin="259,246,131.2,167.8" Name="Fire">
-            <Image Source="Images/fire.png" Height="20" Width="20"></Image>
+            <Image Source="../Images/fire.png" Height="20" Width="20"></Image>
         </CheckBox>
 
         <CheckBox Margin="259,273,131.2,140.8" Name="Fight">
-            <Image Source="Images/fight.png" Height="20" Width="20"></Image>
+            <Image Source="../Images/fight.png" Height="20" Width="20"></Image>
         </CheckBox>
 
         <CheckBox Margin="259,300,131.2,114.8" Name="Dark">
-            <Image Source="Images/dark.png" Height="20" Width="20"></Image>
+            <Image Source="../Images/dark.png" Height="20" Width="20"></Image>
         </CheckBox>
 
         <CheckBox Margin="158,299,232.2,114.8" Name="Fairy">
-            <Image Source="Images/Fairy.png" Height="20" Width="20"></Image>
+            <Image Source="../Images/Fairy.png" Height="20" Width="20"></Image>
         </CheckBox>
 
         <CheckBox Margin="158,326,232.2,86.8" Name="Dragon">
-            <Image Source="Images/dragon.png" Height="20" Width="20"></Image>
+            <Image Source="../Images/dragon.png" Height="20" Width="20"></Image>
         </CheckBox>
 
         <CheckBox Margin="259,327,131.2,86.8" Name="Psychic">
-            <Image Source="Images/psychic.png" Height="20" Width="20"></Image>
+            <Image Source="../Images/psychic.png" Height="20" Width="20"></Image>
         </CheckBox>
 
         <CheckBox Margin="259,354,131.2,55.8" Name="Steel">
-            <Image Source="Images/steel.png" Height="20" Width="20"></Image>
+            <Image Source="../Images/steel.png" Height="20" Width="20"></Image>
         </CheckBox>
         
         <TextBox HorizontalAlignment="Left" Name="DeckNameTxt" Height="23" Margin="165,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>

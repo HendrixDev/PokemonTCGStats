@@ -67,17 +67,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="MatchHistory.xaml.cs">
+    <Compile Include="Windows\MatchHistory.xaml.cs">
       <DependentUpon>MatchHistory.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Stats.xaml.cs">
+    <Compile Include="Windows\Stats.xaml.cs">
       <DependentUpon>Stats.xaml</DependentUpon>
     </Compile>
-    <Page Include="BlackCrystal.xaml">
+    <Page Include="Styling\BlackCrystal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="Windows\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -85,32 +85,32 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="MatchHistory.xaml">
+    <Page Include="Windows\MatchHistory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="NewDeck.xaml">
+    <Page Include="Windows\NewDeck.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="NewPlayer.xaml">
+    <Page Include="Windows\NewPlayer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Stats.xaml">
+    <Page Include="Windows\Stats.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NewDeck.xaml.cs">
+    <Compile Include="Windows\NewDeck.xaml.cs">
       <DependentUpon>NewDeck.xaml</DependentUpon>
     </Compile>
-    <Compile Include="NewPlayer.xaml.cs">
+    <Compile Include="Windows\NewPlayer.xaml.cs">
       <DependentUpon>NewPlayer.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -164,5 +164,6 @@
       <Name>PokemonTCG.Data</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

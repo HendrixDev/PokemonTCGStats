@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-F:\Visual Studio\PokemonTCG\obj\Release\
+C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\obj\Release\
 PokemonTCG
 none
 false
 TRACE
-F:\Visual Studio\PokemonTCG\App.xaml
-6-1006794142
+C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\App.xaml
+6391633825
 
-91022687469
-21881552907
-BlackCrystal.xaml;MainWindow.xaml;MatchHistory.xaml;NewDeck.xaml;NewPlayer.xaml;Stats.xaml;
+91357766776
+21-739202073
+Styling\BlackCrystal.xaml;Windows\MainWindow.xaml;Windows\MatchHistory.xaml;Windows\NewDeck.xaml;Windows\NewPlayer.xaml;Windows\Stats.xaml;
 
 True
 

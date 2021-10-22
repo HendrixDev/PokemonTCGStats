@@ -2,8 +2,8 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:PokemonTCG"
-             StartupUri="MainWindow.xaml">
+             StartupUri="Windows/MainWindow.xaml">
     <Application.Resources>
-        <ResourceDictionary Source="BlackCrystal.xaml"></ResourceDictionary>
+        <ResourceDictionary Source="Styling/BlackCrystal.xaml"></ResourceDictionary>
     </Application.Resources>
 </Application>

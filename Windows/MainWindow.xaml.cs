@@ -31,17 +31,13 @@ namespace PokemonTCG
 
             ResetUI();
 
-            PlayerOneSelect.Items.Add("Select Player...");
-            PlayerTwoSelect.Items.Add("Select Player...");
+            AddDefaultPlayerListBoxItems("Select Player...");
+
 
             PlayerOneDamage.IsEnabled = false;
             PlayerTwoDamage.IsEnabled = false;
 
-            foreach (Player player in linq.GetPlayers())
-            {
-                PlayerOneSelect.Items.Add(player.Name);
-                PlayerTwoSelect.Items.Add(player.Name);
-            }
+            PopulatePlayerListBoxes();
         }
 
         public void UpdateDecks(string playerOneDeckName, string playerTwoDeckName, Match match, PokemonEntities1 db)
@@ -178,6 +174,21 @@ namespace PokemonTCG
                         deckBox.Items.Add(deck.Name);
                     }
                 }
+            }
+        }
+
+        private void AddDefaultPlayerListBoxItems(string item)
+        {
+            PlayerOneSelect.Items.Add(item);
+            PlayerTwoSelect.Items.Add(item);
+        }
+
+        private void PopulatePlayerListBoxes()
+        {
+            foreach (Player player in linq.GetPlayers())
+            {
+                PlayerOneSelect.Items.Add(player.Name);
+                PlayerTwoSelect.Items.Add(player.Name);
             }
         }
 
