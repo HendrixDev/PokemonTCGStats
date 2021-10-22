@@ -29,7 +29,8 @@ C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\PokemonTCG.Data\bin\Debug
 C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\PokemonTCG.Data\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\PokemonTCG.Data\bin\Debug\EntityFramework.xml
 C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\PokemonTCG.Data\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\PokemonTCG.Data\obj\Debug\PokemonTCG.Data.csproj.AssemblyReference.cache
 C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\PokemonTCG.Data\obj\Debug\PokemonTCG.Data.csproj.CoreCompileInputs.cache
 C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\PokemonTCG.Data\obj\Debug\PokemonTCG.Data.dll
 C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\PokemonTCG.Data\obj\Debug\PokemonTCG.Data.pdb
+C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\PokemonTCG.Data\obj\Debug\PokemonTCG.Data.csprojAssemblyReference.cache
+C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\PokemonTCG.Data\obj\Debug\PokemonTCG.Data.csproj.CopyComplete

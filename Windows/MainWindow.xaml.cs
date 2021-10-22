@@ -94,8 +94,8 @@ namespace PokemonTCG
 
         public void UpdatePlayers(string playerOneName, string playerTwoName, Match match, PokemonEntities1 db)
         {
-            Player playerOne = db.Players.Where(x => x.Name == playerOneName).FirstOrDefault();
-            Player playerTwo = db.Players.Where(x => x.Name == playerTwoName).FirstOrDefault();
+            Player playerOne = linq.GetPlayerByName(playerOneName);
+            Player playerTwo = linq.GetPlayerByName(playerTwoName);
 
             //update players
             if (playerOne != null && playerTwo != null)
@@ -166,11 +166,12 @@ namespace PokemonTCG
                 //Get List Of Decks
                 using (PokemonEntities1 db = new PokemonEntities1())
                 {
-                    int playerId = db.Players.Where(x => x.Name == playerBox.Text).Select(x => x.PlayerID).FirstOrDefault();
+                    int playerId = linq.GetPlayerIdByName(playerBox.Name);
 
                     foreach (Deck deck in linq.GetDecksList(playerId))
                     {
-                        List<Type> types = db.Types.Where(x => x.DeckID == deck.DeckID).ToList();
+                        //types not currently used - will use when I figure out how to display type images in listbox
+                        List<Type> types = linq.GetListOfTypesByDeckId(deck.DeckID);
                         deckBox.Items.Add(deck.Name);
                     }
                 }

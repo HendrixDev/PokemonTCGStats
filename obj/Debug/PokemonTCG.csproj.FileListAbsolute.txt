@@ -156,7 +156,6 @@ C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\bin\Debug\PokemonTCG.Data
 C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\bin\Debug\PokemonTCG.Data.dll.config
 C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\bin\Debug\EntityFramework.xml
 C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\obj\Debug\PokemonTCG.csproj.AssemblyReference.cache
 C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\obj\Debug\Styling\BlackCrystal.baml
 C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\obj\Debug\Windows\MainWindow.g.cs
 C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\obj\Debug\Windows\MatchHistory.g.cs
@@ -178,3 +177,5 @@ C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\obj\Debug\PokemonTCG.cspr
 C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\obj\Debug\PokemonTCG.csproj.CoreCompileInputs.cache
 C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\obj\Debug\PokemonTCG.exe
 C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\obj\Debug\PokemonTCG.pdb
+C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\obj\Debug\PokemonTCG.csprojAssemblyReference.cache
+C:\Users\m374l\Source\Repos\HendrixDev\PokemonTCGStats\obj\Debug\PokemonTCG.csproj.CopyComplete

@@ -36,9 +36,9 @@ namespace PokemonTCG.Data
         }
 
 
-        public Player GetPlayer(string playerName)
+        public Player GetPlayerByName(string playerName)
         {
-            Player player = db.Players.SingleOrDefault(x => x.Name == playerName);
+            Player player = db.Players.Where(x => x.Name == playerName).FirstOrDefault();
             return player;
         }
 
@@ -53,5 +53,18 @@ namespace PokemonTCG.Data
             List<Match> matches = db.Matches.OrderBy(x => x.Date).ToList();
             return matches;
         }
+
+        public int GetPlayerIdByName(string name)
+        {
+            int playerId = db.Players.Where(x => x.Name == name).Select(x => x.PlayerID).FirstOrDefault();
+            return playerId;
+        }
+
+        public List<Type> GetListOfTypesByDeckId(int deckId)
+        { 
+            List<Type> types = db.Types.Where(x => x.DeckID == deckId).ToList();
+            return types;
+        }
+
     }
 }
