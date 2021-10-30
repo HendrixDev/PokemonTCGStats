@@ -28,114 +28,96 @@ namespace PokemonTCG
         public MainWindow()
         {
             InitializeComponent();
-
             ResetUI();
-
             AddDefaultPlayerListBoxItems("Select Player...");
-
-
             PlayerOneDamage.IsEnabled = false;
             PlayerTwoDamage.IsEnabled = false;
-
             PopulatePlayerListBoxes();
         }
 
-        public void UpdateDecks(string playerOneDeckName, string playerTwoDeckName, Match match, PokemonEntities1 db)
+        public void UpdateDeck(string deckName, Match match)
         {
+            Deck deck = linq.GetDeckByName(deckName);
+            Player player = linq.GetPlayerByDeckId(deck);
 
-            Deck playerOneDeck = db.Decks.SingleOrDefault(x => x.Name == playerOneDeckName);
-            Deck playerTwoDeck = db.Decks.SingleOrDefault(x => x.Name == playerTwoDeckName);
-
-            string playerOneName = db.Players.Where(x => x.PlayerID == playerOneDeck.PlayerId).Select(x => x.Name).FirstOrDefault();
-            string playerTwoName = db.Players.Where(x => x.PlayerID == playerTwoDeck.PlayerId).Select(x => x.Name).FirstOrDefault();
-
-            if (playerOneDeck != null && playerTwoDeck != null)
+            if (deck != null)
             {
-                playerOneDeck.TotalGamesPlayes++;
-                playerTwoDeck.TotalGamesPlayes++;
+                deck.TotalGamesPlayes++;
 
-                if (match.Winner == playerOneName)
+                if (match.Winner == player.Name)
                 {
-                    playerOneDeck.Wins++;
+                    deck.Wins++;
                 }
 
-                if (match.Winner == playerTwoName)
+                if (CurrentPlayerIsPlayer1(player))
                 {
-                    playerTwoDeck.Wins++;
+                    if (CurrentDamageIsHigherThanPrevious(match.PlayerOneDamage, deck.HighestDamage))
+                    {
+                        deck.HighestDamage = match.PlayerOneDamage;
+                    }
+
+                    if (CurrentDamageIsLowerThanPreviousOrPreviousIsZero(match.PlayerOneDamage, deck.LowestDamage))
+                    {
+                        deck.LowestDamage = match.PlayerOneDamage;
+                    }
                 }
 
-                //new high damage, update DB record
-                if (match.PlayerOneDamage > playerOneDeck.HighestDamage)
+                else
                 {
-                    playerOneDeck.HighestDamage = match.PlayerOneDamage;
-                }
+                    if (CurrentDamageIsHigherThanPrevious(match.PlayerTwoDamage, deck.HighestDamage))
+                    {
+                        deck.HighestDamage = match.PlayerTwoDamage;
+                    }
 
-                if (match.PlayerTwoDamage > playerTwoDeck.HighestDamage)
-                {
-                    playerTwoDeck.HighestDamage = match.PlayerTwoDamage;
+                    if (CurrentDamageIsLowerThanPreviousOrPreviousIsZero(match.PlayerTwoDamage, deck.LowestDamage))
+                    {
+                        deck.LowestDamage = match.PlayerTwoDamage;
+                    }
                 }
-
-                //new low damage, update DB record
-                if (match.PlayerOneDamage < playerOneDeck.LowestDamage || playerOneDeck.LowestDamage == 0)
-                {
-                    playerOneDeck.LowestDamage = match.PlayerOneDamage;
-                }
-
-                if (match.PlayerTwoDamage < playerTwoDeck.LowestDamage || playerTwoDeck.LowestDamage == 0)
-                {
-                    playerTwoDeck.LowestDamage = match.PlayerTwoDamage;
-                }
+                linq.UpdateDatabaseRecord(deck);
             }
-
-            db.Entry(playerOneDeck).State = System.Data.Entity.EntityState.Modified;
-            db.Entry(playerTwoDeck).State = System.Data.Entity.EntityState.Modified;
-
         }
 
-        public void UpdatePlayers(string playerOneName, string playerTwoName, Match match, PokemonEntities1 db)
+        public void UpdatePlayer(string playerName, Match match)
         {
-            Player playerOne = linq.GetPlayerByName(playerOneName);
-            Player playerTwo = linq.GetPlayerByName(playerTwoName);
+            Player player = linq.GetPlayerByName(playerName);
 
-            //update players
-            if (playerOne != null && playerTwo != null)
+            if (player != null)
             {
-                playerOne.TotalGamesPlayed++;
-                playerTwo.TotalGamesPlayed++;
+                player.TotalGamesPlayed++;
 
-                if (match.Winner == playerOneName)
+                if (match.Winner == player.Name)
                 {
-                    playerOne.Wins++;
+                    player.Wins++;
                 }
 
-                if (match.Winner == playerTwoName)
+                if (CurrentPlayerIsPlayer1(player))
                 {
-                    playerTwo.Wins++;
+                    if (CurrentDamageIsHigherThanPrevious(match.PlayerOneDamage, player.HighestDamage))
+                    {
+                        player.HighestDamage = match.PlayerOneDamage;
+                    }
+
+                    if (CurrentDamageIsLowerThanPreviousOrPreviousIsZero(match.PlayerOneDamage, player.LowestDamage))
+                    {
+                        player.LowestDamage = match.PlayerOneDamage;
+                    }
                 }
 
-                if (match.PlayerOneDamage > playerOne.HighestDamage)
+                else
                 {
-                    playerOne.HighestDamage = match.PlayerOneDamage;
-                }
+                    if (CurrentDamageIsHigherThanPrevious(match.PlayerTwoDamage, player.HighestDamage))
+                    {
+                        player.HighestDamage = match.PlayerTwoDamage;
+                    }
 
-                if (match.PlayerTwoDamage > playerTwo.HighestDamage)
-                {
-                    playerTwo.HighestDamage = match.PlayerTwoDamage;
+                    if (CurrentDamageIsLowerThanPreviousOrPreviousIsZero(match.PlayerTwoDamage, player.LowestDamage))
+                    {
+                        player.LowestDamage = match.PlayerTwoDamage;
+                    }
                 }
-
-                if (match.PlayerOneDamage < playerOne.LowestDamage || playerOne.LowestDamage == 0)
-                {
-                    playerOne.LowestDamage = match.PlayerOneDamage;
-                }
-
-                if (match.PlayerTwoDamage < playerTwo.LowestDamage || playerTwo.LowestDamage == 0)
-                {
-                    playerTwo.LowestDamage = match.PlayerTwoDamage;
-                }
+                linq.UpdateDatabaseRecord(player);
             }
-
-            db.Entry(playerOne).State = System.Data.Entity.EntityState.Modified;
-            db.Entry(playerTwo).State = System.Data.Entity.EntityState.Modified;
         }
 
         public void ResetUI()
@@ -176,6 +158,21 @@ namespace PokemonTCG
                     }
                 }
             }
+        }
+
+        public bool CurrentPlayerIsPlayer1(Player player)
+        {
+            return player.Name == PlayerOneSelect.Text;
+        }
+
+        public bool CurrentDamageIsHigherThanPrevious(int currentDamage, int previousDamage)
+        {
+            return currentDamage > previousDamage;
+        }
+
+        public bool CurrentDamageIsLowerThanPreviousOrPreviousIsZero(int currentDamage, int previousDamage)
+        {
+            return currentDamage < previousDamage || currentDamage == 0;
         }
 
         private void AddDefaultPlayerListBoxItems(string item)
@@ -231,14 +228,11 @@ namespace PokemonTCG
                 Winner = MatchWinner.Text
             };
 
-            using (PokemonEntities1 db = new PokemonEntities1())
-            {
-                db.Matches.Add(match);
-                UpdatePlayers(PlayerOneSelect.Text, PlayerTwoSelect.Text, match, db);
-                UpdateDecks(PlayerOneDeckSelect.Text, PlayerTwoDeckSelect.Text, match, db);
-                db.SaveChanges();
-            }
-
+            linq.SaveNewMatch(match);
+            UpdatePlayer(PlayerOneSelect.Text, match);
+            UpdatePlayer(PlayerTwoSelect.Text, match);
+            UpdateDeck(PlayerOneDeckSelect.Text, match);
+            UpdateDeck(PlayerTwoDeckSelect.Text, match);
             ResetUI();
         }
 

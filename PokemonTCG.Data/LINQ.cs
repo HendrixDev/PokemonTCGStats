@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace PokemonTCG.Data
 {
-    
     public class LINQ
     {
         PokemonEntities1 db = new PokemonEntities1();
@@ -29,7 +28,7 @@ namespace PokemonTCG.Data
         }
 
 
-        public Deck GetDeck(string deckName)
+        public Deck GetDeckByName(string deckName)
         {
             Deck playerDeck = db.Decks.SingleOrDefault(x => x.Name == deckName);
             return playerDeck;
@@ -46,6 +45,12 @@ namespace PokemonTCG.Data
         {
             List<Player> players = db.Players.ToList();
             return players;
+        }
+
+        public Player GetPlayerByDeckId(Deck deck)
+        { 
+            Player player = db.Players.Where(x => x.PlayerID == deck.PlayerId).FirstOrDefault();
+            return player;
         }
 
         public List<Match> GetMatches()
@@ -66,5 +71,15 @@ namespace PokemonTCG.Data
             return types;
         }
 
+        public void UpdateDatabaseRecord(object dataItem)
+        {
+            db.Entry(dataItem).State = System.Data.Entity.EntityState.Modified;
+        }
+
+        public void SaveNewMatch(Match match)
+        {
+            db.Matches.Add(match);
+            db.SaveChanges();
+        }
     }
 }
